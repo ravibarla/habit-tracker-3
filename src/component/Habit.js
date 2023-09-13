@@ -4,7 +4,10 @@ const Habit = (props) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="border" onClick={() => navigate(`tracker/${habit.id}`)}>
+      <div
+        className="border rounded "
+        onClick={() => navigate(`tracker/${habit.id}`)}
+      >
         {habit.name}
       </div>
     </>

@@ -6,7 +6,7 @@ import CreateHabit from "./CreateHabit";
 import HabitTracker from "./HabitTracker";
 function App() {
   return (
-    <div className="App">
+    <div className="App d-flex justify-content-center">
       <Router>
         <Routes>
           <Route exact path="/" element={<HabitList />} />

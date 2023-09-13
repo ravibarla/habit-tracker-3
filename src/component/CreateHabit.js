@@ -46,7 +46,7 @@ const CreateHabit = (props) => {
     navigate(-1);
   };
   return (
-    <>
+    <div className="d-flex flex-column mb-3">
       <Heading heading={heading} />
       <form onSubmit={(e) => handleForm(e)}>
         <input
@@ -54,9 +54,9 @@ const CreateHabit = (props) => {
           onChange={(e) => setName(e.target.value)}
           type="text"
         />
-        <button>ADD</button>
+        <button className="btn btn-primary m-2">ADD</button>
       </form>
-    </>
+    </div>
   );
 };
 export default CreateHabit;

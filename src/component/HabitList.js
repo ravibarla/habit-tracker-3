@@ -13,7 +13,13 @@ const HabitList = (props) => {
       {habitList.map((habit, i) => (
         <Habit habit={habit} key={i} />
       ))}
-      <button onClick={() => navigate("create")}>Create</button>
+      <button
+        onClick={() => navigate("create")}
+        type="button"
+        class="btn btn-secondary"
+      >
+        Create
+      </button>
     </div>
   );
 };

@@ -10,7 +10,7 @@ export const dummyHabits = [
       },
       {
         date: "2023-09-12",
-        status: "done",
+        status: "not done",
       },
       {
         date: "2023-09-11",

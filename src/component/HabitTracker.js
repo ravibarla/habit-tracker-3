@@ -27,8 +27,20 @@ const HabitTracker = (props) => {
               <HistoryCard data={data} />
             ))}
           </div>
-          <button onClick={() => navigate(-1)}>back</button>
-          <button onClick={() => removeHabitHandle()}>Remove</button>
+          <button
+            onClick={() => navigate(-1)}
+            type="button"
+            class="btn btn-secondary rounded d-inline-flex justify-content-center m-2 p-2"
+          >
+            back
+          </button>
+          <button
+            onClick={() => removeHabitHandle()}
+            type="button"
+            className="btn btn-danger rounded d-inline-flex justify-content-center m-2 p-2"
+          >
+            Remove
+          </button>
         </>
       )}
     </div>

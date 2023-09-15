@@ -23,11 +23,18 @@ const HistoryCard = (props) => {
   };
   return (
     <div
-      className="border bg-primary rounded border-3 m-1 p-1 d-flex flex-column justify-content-end"
+      className={`border 
+        ${
+          data.status == "done"
+            ? "bg-info"
+            : `${data.status == "not done" ? "bg-warning" : "bg-light"}`
+        }
+       rounded border-3 m-1 p-1 d-flex flex-column justify-content-end
+       `}
       key={i}
       onClick={(e) => handleUpdateHabit(habitId, data.date, data.status)}
     >
-      <p className="m-1">{data.date}</p>
+      <p className="m-2">{data.date}</p>
       <p className="text-uppercase m-1">{data.status}</p>
     </div>
   );
